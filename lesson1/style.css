@@ -1,6 +1,23 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHRhYmxlfGVufDB8fDB8fHww");
+    background-size: cover;
+    /*параметр пропорційного розтягнення картинки*/
+    background-attachment: fixed;
+    /*фіксація картинки при скролі*/
+    background-position: center;
+    /*позиціонування картинки*/
+
+}
 p{
     color: coral;
-    font-size: 32px;
+    /*font-size: 32px;*/
+    width: 30%;
+    height: 50px;
+    background-color: lightblue;
+    /*display: block; за замовчуванням (можна змінювати на inline)*/
+    /*display: inline;*/
+    display: inline-block;
+    /*дозволяє розміщати елементи в рядок, але при цьому зберігати параметри ширини та висоти*/
 }
 h2, h3{
     color: cornflowerblue;
@@ -9,7 +26,19 @@ sub, sup{
     font-size: 16px;
     color: tan;
 }
-span{
-    font-size: 40px;
+span {
+    /*font-size: 40px;*/
     color: darkblue;
+    width: 30%;
+    height: 50px;
+    /*ширина і висота проігноровані, оскільки це рядковий тег*/
+    background-color: lightblue;
+    /*    display: inline; за замовчуванням (можна змінювати на block)*/
+    /*display: block;*/
+    display: inline-block;
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
