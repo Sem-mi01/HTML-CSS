@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            /*для перенесення обєктів при переповненні контейнера*/
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background: rgb(195,189,34);
+            background: linear-gradient(0deg, rgba(195,189,34,0.9774436090225564) 1%, rgba(245,180,42,1) 100%);
+            box-shadow: 36px 18px 58px 0 rgba(0,0,0,0.75);
+            border-radius: 50%;
+            border: 3px solid rgb(34,193,195);
+            transition: 1s;
+            /*плавність при відведенні*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item a{
+            text-decoration: none;
+            /*прибираємо нижнє підкреслення*/
+            color: blue;
+        }
+        .item:hover{
+            border-radius: 0;
+            border: 4px solid rgb(253,187,45);
+            transition: 3s;
+            /*Плавність при наведенні*/
+            /*width: 400px;*/
+            /*height: 400px;*/
+            /*задаємо розмір для збільшення елементів при наведенні/ при цьому інші елементи зсовуються*/
+            transform: scale(1.1);
+            /*задаємо розмір для збільшення (більше 1)/зменшення (менше 1) елементів при наведенні/ при цьому інші елементи не розсовуються*/
+        }
+        .item:hover a{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item">
+        <a href="#">link</a>
+    </div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+</body>
+</html>
+
