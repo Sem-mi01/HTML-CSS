@@ -1,3 +1,10 @@
+<!--Пріоритетність стилізації:
+1. вбудована стилізація
+2. id (присвоюється лише одному компоненту)
+3. клас
+4. тег-->
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,8 +12,29 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        p{
+            color: coral;
+        }
+        .lorem{
+            color: lightgreen;
+            background-color: beige;
+        }
+        #gold{
+            color: gold;
+        }
+        .size32{
+            font-size: 32px;
+        }
+
+
+    </style>
+
 </head>
 <body>
+<p class="lorem size32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, mollitia.</p>
+<p class="lorem" id="gold">Animi consequuntur distinctio et maxime nesciunt numquam pariatur perspiciatis suscipit.</p>
+<p class="lorem" style="color: red">Cumque deserunt explicabo impedit ipsa modi nemo nihil optio? Impedit!</p>
 
 </body>
 </html>
