@@ -5,9 +5,77 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            /*width: 50%;*/
+            /*height: 50%;*/
+            /*background-color: lightgreen;*/
+            /*margin: 0 10px;*/
+        }
+        .red{
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+        .red p{
+            /*text-align: center;*/
+            /*вирівнювання тексту*/
+        }
+        .red img{
+            width: 50%;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .flex{
+            height: 100%;
+            background-color: burlywood;
+            display: flex;
+            /*justify-content: flex-start;*/
+            /*justify-content: flex-end;*/
+            justify-content: center;
+            /*justify-content: space-around;*/
+            /*justify-content: space-between;*/
+            /*justify-content: space-evenly;*/
+            /*розміщення по горизонталі*/
+            gap: 20px;
+            /*відступи між обєктами, використовується тільки у flex*/
+            /*align-items: flex-start;*/
+            align-items: center;
+            /*align-items: flex-end;*/
+            /*вирівнювання по вертикалі*/
+            /*flex-direction: row;*/
+            /*flex-direction: row-reverse;*/
+            /*flex-direction: column;*/
+            flex-direction: column-reverse;
+            /*визначає напрямок розміщення елементів в контейнері*/
+
+
+        }
+    </style>
 </head>
 <body>
-
+<div class="flex">
+    <div class="box red">
+        <p>Lorem ipsum dolor.</p>
+        <img src="https://waapple.org/wp-content/uploads/2021/06/Fuji-1-e1728339293227-658x669.png" alt="червоне яблуко">
+    </div>
+    <div class="box yellow"></div>
+    <div class="box green"></div>
+</div>
 </body>
 </html>
 
