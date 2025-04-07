@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+
+.fridge{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products{
+    width: 300px;
+    height: 300px;
+    border: 3px solid gray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+p{
+    font-size: 25px;
+}
+h1, h2{
+    text-align: center;
+    margin-top: 20px;
+}
