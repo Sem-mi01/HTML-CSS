@@ -6,11 +6,140 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgba(73, 112, 73, 0.83);
+        }
+        .flex-box{
+           height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px 0;
+        }
+        .section{
+            width: 250px;
+            height: 200px;
+            background-color: #b8cda0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+            border: 2px solid;
+            border-radius: 10px;
+            box-shadow: 15px 7px 5px 0 rgba(0,0,0,0.1);
+            transition: 1s;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .section:hover{
+            transform: scale(1.1);
+            transition: 2s;
+        }
+        h2, p{
+            padding-bottom: 10px;
+            text-decoration: #698c69;
+
+        }
+        h2{
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
 
     </style>
 </head>
 <body>
-
+<div class="flex-box">
+        <div class="section">
+            <h2>Січень</h2>
+            <p>Довжина дня: 8 годин</p>
+            <p>Температура: -5°C</p>
+            <p>Температурний рекорд: -25°C</p>
+            <p>Кількість днів: 31</p>
+        </div>
+        <div class="section">
+            <h2>Лютий</h2>
+            <p>Довжина дня: 9 годин</p>
+            <p>Температура: -3°C</p>
+            <p>Температурний рекорд: -20°C</p>
+            <p>Кількість днів: 28 (29 у високосний рік)</p>
+        </div>
+        <div class="section">
+            <h2>Березень</h2>
+            <p>Довжина дня: 11 годин</p>
+            <p>Температура: 2°C</p>
+            <p>Температурний рекорд: -10°C</p>
+            <p>Кількість днів: 31</p>
+        </div>
+        <div class="section">
+            <h2>Квітень</h2>
+            <p>Довжина дня: 13 годин</p>
+            <p>Температура: 10°C</p>
+            <p> Температурний рекорд: -5°C</p>
+            <p> Кількість днів: 30</p>
+        </div>
+        <div class="section">
+            <h2>Травень</h2>
+            <p>Довжина дня: 15 годин</p>
+            <p>Температура: 15°C</p>
+            <p>Температурний рекорд: 30°C</p>
+            <p>Кількість днів: 31</p>
+        </div>
+        <div class="section">
+            <h2>Червень</h2>
+            <p>Довжина дня: 17 годин</p>
+            <p> Температура: 20°C</p>
+            <p>Температурний рекорд: 35°C</p>
+            <p>Кількість днів: 30</p>
+        </div>
+        <div class="section">
+            <h2>Липень</h2>
+            <p>Довжина дня: 16 годин</p>
+            <p>Температура: 25°C</p>
+            <p>Температурний рекорд: 40°C</p>
+            <p>Кількість днів: 31</p>
+        </div>
+        <div class="section">
+            <h2>Серпень</h2>
+            <p>Довжина дня: 14 годин</p>
+            <p>Температура: 24°C</p>
+            <p>Температурний рекорд: 38°C</p>
+            <p>Кількість днів: 31</p>
+        </div>
+        <div class="section">
+            <h2>Вересень</h2>
+            <p>Довжина дня: 12 годин</p>
+            <p>Температура: 18°C</p>
+            <p>Температурний рекорд: 30°C</p>
+            <p>Кількість днів: 30</p>
+        </div>
+        <div class="section">
+            <h2>Жовтень</h2>
+            <p>Довжина дня: 10 годин</p>
+            <p>Температура: 10°C</p>
+            <p>Температурний рекорд: 25°C</p>
+            <p>Кількість днів: 31</p>
+        </div>
+        <div class="section">
+            <h2>Листопад</h2>
+            <p>Довжина дня: 8 годин </p>
+            <p>Температура: 5°C</p>
+            <p>Температурний рекорд: 15°C</p>
+            <p>Кількість днів: 30</p>
+        </div>
+        <div class="section">
+            <h2>Грудень</h2>
+            <p>Довжина дня: 7 годин</p>
+            <p>Температура: -2°C</p>
+            <p>Температурний рекорд: -20°C</p>
+            <p>Кількість днів: 31</p>
+        </div>
+</div>
 </body>
 </html>
 
