@@ -7,6 +7,9 @@
     list-style-type: none;
 }
 /*..........header..............*/
+.active-link{
+    color: #537161;
+}
 header{
     height: 10vh;
     display: flex;
