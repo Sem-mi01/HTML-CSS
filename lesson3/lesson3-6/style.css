@@ -5,7 +5,7 @@
     list-style-type: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /*плавний перехід між секцями*/
+    /*плавний перехід між секціями. У разі, яко не працюе, потрібно внести зміни у браузері(chrome://flags/). повинен бути статус Smooth Scrolling-Enabled*/
 }
 section{
     height: 100vh;
@@ -33,4 +33,7 @@ nav ul a{
 }
 #section-info{
     background-color: lightsteelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
