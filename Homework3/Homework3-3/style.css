@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+p{
+    width: 90%;
+    padding: 10px 0;
+}
+h2{
+    padding-bottom: 20px;
+}
+a{
+    padding: 20px 0;
+    font-size: 24px;
+    color: black;
+}
+#Pink{
+    background-color: pink;
+}
+#Blue{
+    background-color: blue;
+}
+#Salad{
+    background-color: limegreen;
+}
