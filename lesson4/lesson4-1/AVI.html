@@ -3,8 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Audio Video Iframe</title>
+    <style>
+        video{
+            width: 50%;
+        }
+        iframe{
+            width: 30vw;
+            height: 30vw;
+            border: 10px solid hotpink;
+        }
+
+    </style>
 </head>
 <body>
-
+<!--<video src="files/Disney.mp4" autoplay muted></video>-->
+<!--autoplay без controls підходе тоді коли ми, наприклад ставимо відео на задній фон без можливості вчинення дій з ним-->
+<!--<video src="files/Disney.mp4" controls autoplay muted loop></video>-->
+<!--loop відповіда за циклічність відтворення відео-->
+    <video src="files/Disney.mp4" controls muted loop poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRebnCougKsF2kp-ZtU_pXt9gLcD9Ahm4YYRg&s"></video>
+<!--ми можемо додати постер перед відео він буде до того часу, поки відео не почнеться-->
+    <audio src="files/Ukraina.mp3" controls></audio>
+    <iframe src="https://wbo.ophir.dev/boards/CQig9KgbLcYGRt6Zkm3Qm139OiQh8xED0xCnOMJqubk-"></iframe>
+    <iframe src="https://www.youtube.com/watch?v=Ye8hvPLRAN0&t=1s"></iframe>
+<!--відсутній доступ до відео через звичайне посилання. Youtybe, fb, insta та дек інші блокуютьтакий доступб, але... -->
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ye8hvPLRAN0?si=ZlgMk_8aSLahGSkm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>">
+<!--ширину і висоту ми можемо коригувати через стилізацію. у вбудованій стилізації підтримуються лише рх та %-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82741.55625225928!2d34.557238549999994!3d49.60390374999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1suk!2sua!4v1746441189954!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ для карти border не застосувася оскільки у вбудованому стилі стоїть border: 0; що мае вищий пріоритет.
 </body>
 </html>
