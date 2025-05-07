@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.rectangle{
+    width: 400px;
+    /*якщо елемент повинен зайняти весь доступний простір по ширині, то вказумо 100%б або взагалі не вказумо ширину*/
+    height: 400px;
+    border-radius: 49px;
+    border: 10px solid #475842;
+    background: #d2c0c0;
+    box-shadow: 0 4px 4px 0 rgba(93, 111, 107, 0.25);
+    margin: 116px auto 0 auto;
+}
