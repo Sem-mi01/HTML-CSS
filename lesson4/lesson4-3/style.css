@@ -98,3 +98,69 @@ header button{
     align-items: center;
     margin: 132px 0 150px 0;
 }
+.subscription{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px 0 84px 0;
+}
+.subscription h2{
+    color: #19191B;
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px; /* 114% */
+    letter-spacing: -1.563px;
+    width: 556px;
+    margin-left: 166px;
+}
+.subscription p{
+    color: #696871;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+    width: 459px;
+    margin: 30px 0 30px 166px;
+}
+.subscription a{
+    color: #5454D4;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+    margin-left: 166px;
+}
+.metrics{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.metrics h2{
+    color: #19191B;
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px; /* 114% */
+    letter-spacing: -1.563px;
+    width: 409px;
+}
+.metrics p{
+    color: #696871;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px; /* 150% */
+    letter-spacing: -0.625px;
+    width: 409px;
+    margin: 30px 0 30px 0;
+}
+.metrics a{
+    color: #5454D4;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+}
