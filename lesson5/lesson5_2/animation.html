@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    .pink-box{
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+      margin: 300px auto 0 auto;
+      animation: square 5s linear infinite alternate;
+      /*назва анимації; таймер; швидкість;кількість повторів; infinite-безкінечно; плавність*/
+    }
+    @keyframes square {
+      from{
+        /*transform: scale(1.5) rotate(60deg);*/
+        transform: skew(40deg);
+      }
+      /*rotate - поворот в градусах
+      skew - нахил в градусах*/
+      40%{
+        border: 10px solid blue;
+        border-radius: 20%
+      }
+      60%{
+        transform: rotate(-60deg);
+      }
+      to{
+        transform: scale(1) rotate(0deg) skew(0deg);
+        background-color: yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="pink-box"></div>
+</body>
+</html>
