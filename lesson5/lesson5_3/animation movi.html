@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+    .pink-box{
+      width: 500px;
+      height: 500px;
+      background-color: pink;
+      margin: 300px auto 0 auto;
+      animation: square 5s linear infinite alternate;
+      /*назва анимації; таймер; швидкість;кількість повторів; infinite-безкінечно; плавність*/
+    }
+    @keyframes square {
+      from{
+        /*transform: scale(1,2); */
+        /*якщо scale(1,2) (через кому), то це сприймається як два параменти - 1-Х ширина, 2-Y висота. Можна зазначати окремо scaleX(1.5) та scaleY(2)*/
+        /*transform: skewY(40deg) */
+        transform: translateX(300px);
+        /*це переміщенняю можна по Х і по Y, можна у %. Якщо не зазначати, то по Х 0% та по Y 0%*/
+      }
+      50%{
+        transform: translate(-100px, 300px);
+      }
+      to{
+        transform: translateY(-500px);
+        background-color: yellow;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="pink-box"></div>
+</body>
+</html>
