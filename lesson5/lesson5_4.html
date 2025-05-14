@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Order</title>
+  <style>
+    .flex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-top: 100px;
+    }
+    .card{
+      width: 200px;
+      height: 200px;
+    }
+    .yellow{
+      background-color: yellow;
+      order: 1;
+    }
+    .blue{
+      background-color: blue;
+    }
+    .green{
+      background-color: green;
+      order: -1;
+    }
+    .pink{
+      background-color: pink;
+      order: -2;
+    }
+    .orange{
+      background-color: orange;
+      order: 2;
+    }
+    /*за замовчуванням у компонентів стоїть індекс 0, але можна змінювати. Щоб переставити вліво ставимо цифри менше 0, вправо - більше 0. Працює лише в межах flex контейнера*/
+  </style>
+
+</head>
+<body>
+  <div class="flex">
+    <div class="card yellow"></div>
+    <div class="card blue"></div>
+    <div class="card green"></div>
+    <div class="card pink"></div>
+    <div class="card orange"></div>
+  </div>
+</body>
+</html>
