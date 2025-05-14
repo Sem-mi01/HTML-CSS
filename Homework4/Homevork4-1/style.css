@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+header, footer{
+    height: 22vh;
+    background: #D9D9D9;
+}
+main{
+    display: flex;
+}
+aside{
+    width: 27vw;
+    height: 56vh;
+    background: #C0BDBD;
+}
+div{
+    width: 46vw;
+    height: 56vh;
+}
+.gray{
+    width: 46vw;
+    height: 46%;
+    background: #827878;
+}
+.lightgray{
+    width: 46vw;
+    height: 54%;
+    background: #B7ADAD;;
+}
