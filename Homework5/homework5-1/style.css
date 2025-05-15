@@ -7,6 +7,7 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 100px auto;
 }
 .container{
     width: 300px;
@@ -16,7 +17,6 @@ div{
     border-bottom: 9px solid blue;
     border-left: 12px solid yellow;
     border-radius: 10px;
-    margin: 50px auto;
     animation: square 5s linear infinite alternate;
 }
 .circle-top{
