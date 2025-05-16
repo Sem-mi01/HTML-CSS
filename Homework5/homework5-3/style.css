@@ -34,11 +34,10 @@ img{
         transform: translate(100px, -100px);
     }
     40%{
-        transform: translate(200px, -100px) scale(0.8);
+        transform: translate(180px, -100px) scale(0.8);
     }
     50%{
-        transform: translate(200px, -100px)  scale(0.7);
-    }
+        transform: translate(200px, -100px)  scale(0.7);    }
     60%{
         transform: translate(220px, -110px)  scale(0.6);
     }
