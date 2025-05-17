@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>псевдокласи та псевдоелементи</title>
+    <style>
+        div :first-child{
+            color: red;
+            /*стилізуємо перший компонент - псевдокласи :*/
+        }
+        div :last-child{
+            color: blue;
+            /*останній компонент*/
+        }
+        div :nth-child(2){
+            color: green;
+            /*другий компонент*/
+        }
+        div p::first-letter{
+            color: deeppink;
+            font-size: 20px;
+            /*перші букви - псевдоелемент ::*/
+        }
+        div p::first-line{
+            color: blue;
+            /*перший рядок*/
+        }
+        div p:last-of-type{
+            color: lightgreen;
+            /*стилізуємо за типом останній елемент в псевдокласі p (псевдоелемент)*/
+        }
+        ul li:nth-child(n){
+            color: #FF7143;
+            /*стилізуємо всі елементи */
+        }
+        ul li:nth-child(4n){
+            color: pink;
+            /*стилізуємо кожен четвертий компонент*/
+        }
+        ul li:nth-child(2n+6){
+            color: cornflowerblue;
+            /*стилізуємо кожен другий компонент починаючи з 6-го*/
+        }
+        ul li:nth-child(odd){
+            color: #FF7143;
+            /*стилізуємо кожен непареий компонент. even - кожен парний*/
+        }
+        ul li:nth-last-child(3n+2){
+            color: brown;
+            /*кожен третій компонент посинаючи знизу*/
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, libero voluptas? Accusantium cumque delectus eos iure sapiente soluta sunt voluptatem.</p>
+    <p>Accusantium ad consequatur cum cumque eaque, earum fugit iure magnam omnis quo repellendus tenetur, unde. Accusantium alias doloribus nisi saepe?</p>
+    <p>Alias aliquam corporis culpa est ipsa ipsum molestiae odit placeat provident saepe, sed, voluptatem, voluptates voluptatibus? Expedita minima pariatur
+        quisquam.</p>
+    <p>Aliquid aut beatae incidunt odit, quaerat totam vel voluptatem! Corporis doloribus error impedit molestiae, necessitatibus odio? Ea nihil nobis repudiandae.</p>
+    <p>Atque commodi, dignissimos dolore, ex expedita fugiat inventore ipsa maxime nesciunt non odit placeat quibusdam quidem recusandae saepe ut, voluptatem.</p>
+    <span>Lorem.</span><span>Numquam?</span><span>Cumque!</span><span>Dolore!</span>
+    <ul>
+        <li>Lorem ipsum dolor.</li>
+        <li>Dolore, provident, repudiandae.</li>
+        <li>Aliquam, natus, reiciendis.</li>
+        <li>Deserunt dignissimos, reiciendis.</li>
+        <li>Accusantium molestiae, voluptas?</li>
+        <li>Illum, necessitatibus, sequi?</li>
+        <li>Corporis, magnam, tempora!</li>
+        <li>Eligendi, officia reprehenderit.</li>
+        <li>Distinctio, laborum, repellat!</li>
+        <li>Molestiae perferendis, similique.</li>
+        <li>Est, labore, libero.</li>
+        <li>Asperiores, dolore, laborum.</li>
+        <li>Beatae explicabo, in!</li>
+        <li>A, aspernatur iste?</li>
+        <li>Quos ullam, voluptas.</li>
+    </ul>
+</div>
+</body>
+</html>
