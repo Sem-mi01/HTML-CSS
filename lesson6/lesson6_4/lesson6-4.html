@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Псевдоелементи</title>
+    <style>
+        button:hover{
+            background-color: yellow;
+        }
+        button:active{
+            background-color: pink;
+        }
+        a:link{
+            text-decoration: none;
+            color: coral;
+        }
+        a:visited{
+            color: black;
+        }
+        li{
+            color: coral;
+        }
+        li::marker{
+            color: yellow;
+        }
+        p::selection{
+            background: black;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-
+    <button>lorem</button>
+    <a href="https://www.google.com">google</a>
+    <a href="https://advermeda.ua">simvol</a>
+    <a href="https://cssgenerator.org/text-shadow-css-generator.html">shadow</a>
+    <a href="https://icons8.com/icons/set/dog">icons</a>
+    <ul>
+        <li>Lorem.</li>
+        <li>Iure.</li>
+        <li>Illum.</li>
+        <li>Provident?</li>
+        <li>Nesciunt.</li>
+        <li>Veritatis!</li>
+        <li>Veritatis!</li>
+        <li>Facere?</li>
+        <li>Sint.</li>
+        <li>Exercitationem?</li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias consequatur eaque illo nesciunt nulla odit pariatur quod repudiandae sequi sint.</p>
 </body>
 </html>
