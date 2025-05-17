@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selector</title>
+    <style>
+
+        p{
+            color: coral;
+        }
+        p{
+            color: cornflowerblue;
+            /*пріоритет у даної стилізації, бо вона прописана останньою (<p> - однаково балів- 1)*/
+        }
+        p.text{
+            color: black;
+            /*пріоритет у даної стилізації, бо class має більше пріоритету (11 балів)*/
+        }
+        body p.lorem{
+                   color: crimson;
+            /*пріоритет у даної стилізації, бо class і два селектора (12 балів)*/
+               }
+        section div p.pink{
+            color: pink;
+            /*пріоритет у даної стилізації, бо class і три селектора (13 балів)*/
+        }
+        section div.box p.pink{
+            color: lightgreen;
+            /*пріоритет у даної стилізації, бо два class і три селектора (23 балів)*/
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+            <p class="text lorem pink">селектори, які використовуються, мають свою пріоритетність.</p>
+<!--            1000 балів inline-->
+<!--            100 балів id-->
+<!--            10 балів class-->
+<!--            1 балів tag-->
+        </div>
+    </section>
+</body>
+</html>
