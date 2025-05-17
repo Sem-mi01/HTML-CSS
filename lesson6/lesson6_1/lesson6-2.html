@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>комбінаторні селектори</title>
+  <style>
+      h1+p{
+        color: chocolate;
+        /*стилізуємо один наступний тег застосовуючи попередній тег*/
+      }
+      h1~p{
+        color: chocolate;
+        /*стилізуємо всі наступні теги застосовуючи попередній тег*/
+      }
+      div p{
+        color: blue;
+        /*стилізуємо теги всередині div(просторовий або спейс селектор*/
+      }
+      div p span{
+        /*або div span */
+        color: red;
+      }
+      /*>дочірній селекторбякий потребує прямого нащадка*/
+      div>p>span{
+        color: green;
+      }
+      div>div>p{
+        color: gray;
+      }
+
+  </style>
+</head>
+<body>
+<h1>Lorem ipsum dolor.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, non!</p>
+<p>A culpa dicta maiores rem repellendus? Ex nobis perspiciatis tempore!</p>
+<p>A, at cum deleniti earum iusto laboriosam laudantium temporibus tenetur?</p>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab beatae, cum cumque dolore dolorem dolores fuga incidunt inventore laudantium molestiae molestias nam
+      necessitatibus perferendis soluta tempora voluptatem voluptates voluptatibus?</p>
+    <p>Architecto <span>cumque dolore ut</span>. Accusantium ad assumenda doloribus est, fugit hic nam odit officia quo rerum. Consectetur dicta, facere hic illum laboriosam non
+      reprehenderit sint soluta velit vero! Enim, perferendis!</p>
+    <div>
+      <p>Lorem ipsum dolor.</p>
+      <p>Quas, voluptate voluptates.</p>
+      <p>Ad, ipsa quibusdam.</p>
+    </div>
+    <p>At culpa distinctio illum ipsam ipsum nostrum nulla omnis pariatur provident, reprehenderit, sapiente, tenetur voluptatem! Cumque enim, excepturi fuga ipsa iste
+      iusto laudantium mollitia odio pariatur quam sed suscipit vero!</p>
+  </div>
+<p>Cupiditate dolor, dolorem eaque ipsam odit ratione voluptatum! Neque, nesciunt.</p>
+<p>Atque eligendi ex labore repellat repellendus, soluta tempora voluptate voluptates!</p>
+</body>
+</html>
