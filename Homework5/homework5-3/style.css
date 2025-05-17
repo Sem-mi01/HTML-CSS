@@ -25,33 +25,33 @@ img{
         box-shadow: 1px 71px 5px -3px rgba(0,0,0,0.32);
     }
     10%{
-        transform: translateY(-100px);
+        transform: translate(30px, -30px);
     }
     20%{
-        transform: translateY(-100px) ;
+        transform: translate(60px, -60px) ;
     }
     30%{
-        transform: translate(100px, -100px);
+        transform: translate(90px, -90px);
     }
     40%{
-        transform: translate(180px, -100px) scale(0.8);
+        transform: translate(120px, -100px) scale(0.8);
     }
     50%{
-        transform: translate(200px, -100px)  scale(0.7);    }
+        transform: translate(150px, -100px)  scale(0.7);    }
     60%{
-        transform: translate(220px, -110px)  scale(0.6);
+        transform: translate(180px, -110px)  scale(0.6);
     }
     70%{
-        transform: translate(240px, -120px) scale(0.5);
+        transform: translate(210px, -120px) scale(0.5);
     }
     80%{
-        transform: translate(260px, -130px)  scale(0.4);
+        transform: translate(240px, -130px)  scale(0.4);
     }
     90%{
-        transform: translate(280px, -140px) scale(0.3);
+        transform: translate(270px, -140px) scale(0.3);
     }
     to{
-        transform: rotate(360deg);
+        transform: translate(300px, 0) rotate(360deg);
         box-shadow: 1px 71px 5px -3px rgba(0,0,0,0.32);
     }
 }
