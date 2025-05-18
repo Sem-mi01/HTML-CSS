@@ -5,8 +5,28 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>форми реєстрації</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        form sup{
+            color: red;
+        }
+    </style>
 </head>
 <body>
+<form class="form-registration">
+    <label for="name">Введіть своє ім'я</label>
+<!--    тег яий використовується для відображення тексту разом з <input>. Тег є inline-blok-->
+    <input type="text" name="name" id="name" placeholder="Введіть ім'я" required><sup>*</sup>
+<!--    required - вказує на обов'язковість поля-->
+    <label for="email">Введіть свою пошту</label>
+    <input type="email" name="email" id="email" placeholder="example@gmail.com" required> <sup>*</sup>
 
+    <label for="password">Введіть свій пароль</label>
+    <input type="password" name="password" id="password" placeholder="<qwerty>" required><sup>*</sup>
+
+</form>
 </body>
 </html>
