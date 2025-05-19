@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Відносне позиціонування</title>
+  <style>
+    .item{
+      width: 100px;
+      padding: 100px;
+      background: lightcoral;
+      /*position: static; завжди йде за замовчуванням;*/
+      position: relative;
+      /*відносне позиціонування при якому можемо нашаровувати компоненти по осі z-index*/
+      top: -100px;
+        /*піднімається вверх. аналогічно bottom: 100px*/
+        /*top: 100px; опускається вниз. аналогічно bottom: -100px*/
+      left: 100px;
+      /*  right: 100px;*/
+      z-index: -1;
+
+
+
+    }
+  </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos harum non nostrum numquam quo. Illo necessitatibus odio reiciendis saepe tempora. Beatae deserunt
+  dignissimos distinctio, fugiat fugit minima molestiae porro sit soluta! Eveniet molestias necessitatibus, non provident quos rerum temporibus totam! Aliquid at delectus
+  eaque excepturi, fuga impedit maiores repudiandae sit!</p>
+<div class="item"></div>
+</body>
+</html>
