@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>форми реєстрації</title>
+  <style>
+    label{
+      display: block;
+      margin-top: 10px;
+    }
+    form sup{
+      color: red;
+    }
+    textarea{
+      resize: none;
+      width: 150px;
+      height: 30px;
+    }
+
+    /*...... стлізація форми ......*/
+    .form-registration{
+      width: 30%;
+      border: 3px solid lightgreen;
+      border-radius: 20px;
+      padding: 50px;
+    }
+    input[type="text"]{
+      /*можна стилізувати також за class та id*/
+      background: lightcyan;
+      border: 2px solid lightblue;
+      border-radius: 2px;
+      color: cornflowerblue;
+      font-family: sans-serif;
+    }
+    /*плейсхолдер стилізується окремо*/
+    input[type="text"]::placeholder{
+      color: pink;
+    }
+    /*зміна фокусу autline (рамки) input*/
+    input[type="text"]:focus{
+      outline: 2px solid lightgreen;
+    }
+
+  </style>
+</head>
+<body>
+<form class="form-registration">
+  <label for="name">Введіть своє ім'я</label>
+  <!--    тег яий використовується для відображення тексту разом з <input>. Тег є inline-blok-->
+  <input type="text" name="name" id="name" placeholder="Введіть ім'я" required><sup>*</sup>
+  <!--    required - вказує на обов'язковість поля-->
+  <label for="email">Введіть свою пошту</label>
+  <input type="email" name="email" id="email" placeholder="example@gmail.com" required> <sup>*</sup>
+
+  <label for="password">Введіть свій пароль</label>
+  <input type="password" name="password" id="password" placeholder="<qwerty>" required><sup>*</sup>
+
+  <label for="age">Введіть свій вік</label>
+  <input type="number" name="age" id="age" min="18" max="100">
+  <!--    можна задавати мінімальне і максимальне значення та через стилізацію - розмір вікна-->
+
+  <input type="file" name="fale">
+  <!--    можна вводити дату, час, колір і т.д-->
+
+  <label>Стать</label>
+  <!--    радіобатони-->
+  <label><input type="radio" name="gender" value="male">Чоловіча</label>
+  <label><input type="radio" name="gender" value="female">жіноча</label>
+  <!--    для відображення лише одного варіанту ми повині задавати однакове значення атрибуту <name> та для відображення інформації на сервері обов'язково вказувати атрибут <value>-->
+
+  <label>
+    <!--        чекбокси-->
+    <input type="checkbox" name="newsletter">Підписатись на новини
+  </label>
+
+  <label for="Lorem">Країна</label>
+  <!--        випадаючий список-->
+  <select id="Lorem">
+    <option value="">Оберіть країну</option>
+    <option value="ua">Україна</option>
+    <option value="usa">США</option>
+    <option value="ca">Канада</option>
+    <option value="uk">Великобританія</option>
+  </select>
+
+  <!--    групування варіантів в середині списку-->
+  <label for="phone">Phone</label>
+  <select id="phone">
+    <optgroup label="Iphone">
+      <option value="x">Apple X</option>
+      <option value="xr">Apple XR</option>
+      <option value="xs">Apple XS</option>
+    </optgroup>
+    <optgroup label="Samsung">
+      <option value="x">Samsung X</option>
+      <option value="xr">Samsung XR</option>
+      <option value="xs">Samsung XS</option>
+    </optgroup>
+  </select>
+
+  <!--    коментар-->
+  <label for="comment">Коментар</label>
+  <textarea name="comment" id="comment" cols="4" rows="30">
+         </textarea>
+  <!--    можна вказати max кількість строчок (cols) та кількість символів (rows) та в стилізації зафіксувати розмір вікна та надати йому свої розміри-->
+
+  <!--в формі кнопки створюються також за допомогою <input>-->
+  <div>
+    <input type="submit" value="Надіслати">
+    <input type="reset" value="Скинути">
+  </div>
+</form>
+</body>
+</html>
