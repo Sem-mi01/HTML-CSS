@@ -1,0 +1,103 @@
+
+.form{
+    margin: 0 auto;
+    width: 40vw;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.login{
+    height: 80%;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*..................logo..................*/
+.login img{
+    width: 50%;
+    padding: 50px 0 50px 0;
+}
+form{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+/*....................form..................*/
+input{
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+    background-color: rgba(211, 211, 211, 0.3);
+    outline: 1px solid gray;
+}
+input[type="password"]{
+    margin: 10px 0 20px 0;
+}
+input[type="submit"]{
+    background-color: #4abaed;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-bottom:30px;
+}
+span{
+    color: #a8a6a6;
+    font-size: 20px;
+    font-weight: 600;
+}
+.facebook{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-decoration: none;
+    font-size: 24px;
+    color: rgba(55, 93, 177, 0.9);
+    font-weight: 600;
+}
+.facebook:before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png);
+    background-size: cover;
+    margin-right: 10px;
+}
+.password{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(55, 93, 177, 0.9);
+    font-weight: 400;
+}
+/*...................registration..................*/
+.registration{
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgray;
+    margin-top: 10px;
+}
+.registration p{
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.registration a{
+    text-decoration: none;
+    color: #27b1ea;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
