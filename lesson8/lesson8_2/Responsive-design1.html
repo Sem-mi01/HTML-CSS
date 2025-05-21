@@ -5,35 +5,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Адаптивна верстка</title>
-    <style>
-        .item{
-            width: 300px;
-            height: 300px;
-            border: 1px solid;
-        }
-        .item1{
-            background-color: hotpink;
-        }
-        .item2{
-            background-color: lightgreen;
-        }
-        .item3{
-            background-color: darkcyan;
-        }
-        @media screen and (max-width: 480px) {
-            .item2{
-                background-color: khaki;
-            }
-        }
-        @media screen and (min-width: 481px) and (max-width: 768px) {
-            .item1{
-                background-color: yellow;
-            }
-            .item3{
-                background-color: firebrick;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style-main.css">
+    <link rel="stylesheet" href="style-0-480.css">
+    <link rel="stylesheet" href="style-481-768.css">
 </head>
 <body>
     <div class="item item1"></div>
