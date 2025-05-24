@@ -1,21 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 .pictures{
+    width: 1180px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 64px;
-    padding: 64px 48px;
+    padding: 20px 0;
     background: #F3F5F6;
+    margin: 0 auto;
 }
 .picture{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 372px;
+    text-align: center;
 }
 .picture img{
     border-radius: 10px;
-    background-size: cover;
+    width: 100%;
 }
 .picture h4{
     color: #000;
