@@ -1,11 +1,9 @@
-@media screen and (min-width: 769px) and (max-width: 1279px){
+@media screen and (min-width: 769px) and (max-width: 1279px) {
     .pictures{
-        padding: 32px 16px;
-    }
-    .picture{
         width: 720px;
     }
-    .picture img{
+    .picture{
         width: 218px;
     }
+
 }

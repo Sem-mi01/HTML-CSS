@@ -2,6 +2,8 @@
 
 .pictures{
     width: 1180px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +11,8 @@
     column-gap: 32px;
     row-gap: 64px;
     padding: 20px 0;
-    background: #F3F5F6;
-    margin: 0 auto;
+    /*background: #F3F5F6;*/
+
 }
 .picture{
     width: 372px;
@@ -23,7 +25,7 @@
 .picture h4{
     color: #000;
     text-align: center;
-    font-family: 'Inter', sans-serif;
+
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
