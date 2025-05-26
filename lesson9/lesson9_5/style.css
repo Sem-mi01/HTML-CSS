@@ -1,0 +1,22 @@
+.wrapper {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.btn-outline-primary{
+    background-color: navajowhite;
+    /*але не завжди можна зміниити властивість, в boodstrap є властивості з виключенням на які повпливати не можна*/
+}
+.grid-wrapper{
+    height: 90vh;
+    display: grid;
+    border: 1px solid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
